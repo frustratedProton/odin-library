@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Odin Library</title>
+</head>
+<body>
+    <h1 class="title">Library</h1>
+
+    <div id="newBook">
+        <button id="newBookBtn">&plus;</button>
+    </div>
+
+    <div id="popUp">
+        <form id="form" action="script.js">
+            <span class="close">&times;</span>
+            <legend>New Book</legend>
+            <div id="formInput">
+                <p><input type="text" name="title" id="title" placeholder="Title"></p>
+                <p><input type="text" name="author" id="author" placeholder="Author"></p>
+                <p><input type="text" name="pages" id="pages" placeholder="Pages"></p>
+            </div>
+
+            <div id="checkBox">
+                <p><label>Completed: </label>
+                    <input type="checkbox" name="read" id="read" value="no">
+                </p>
+            </div>
+            <button type="submit" form="form" id="addBtn">Add Book</button>
+        </form>
+    </div>
+
+    <div id="library-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
